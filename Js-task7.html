@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Task-7 js</title>
+    </head>
+    <body>
+        1st Number: <input type="number" id="num1"><br/>
+        2nd Number: <input type="number" id="num2"><br/>
+        <button onclick="prod()">Multiply</button>   <button onclick="div()">Divide</button><br/>
+        The Result is:
+        <p id="target"></p>
+        <script>
+            function prod()
+            {
+                var num1 = document.getElementById("num1").value;
+                var num2 = document.getElementById("num2").value;
+                document.getElementById("target").innerHTML = num1*num2;
+            }
+            function div()
+            {
+                var num1 = document.getElementById("num1").value;
+                var num2 = document.getElementById("num2").value;
+                document.getElementById("target").innerHTML = num1/num2;
+            }
+        </script>
+    </body>
+</html>

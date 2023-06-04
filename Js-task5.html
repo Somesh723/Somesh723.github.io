@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Task-5 js</title>
+    </head>
+    <body>
+        Enter a number: <input type="number" id="input"><br/>
+        <button onclick="reverse()">SUBMIT</button>
+        <p id="target"></p>
+        <script>
+            function reverse(){
+                const inp = document.getElementById("input").value;
+                const reversedNum = inp.toString().split('').reverse().join('');
+                document.getElementById("target").innerHTML = reversedNum;
+            }
+            
+        </script>
+    </body>
+</html>
